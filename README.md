@@ -3,7 +3,7 @@
   <br/>
   <a href="https://github.com/marcandrelabellen2/cv-marckit" title="CV marckit">
     <img alt="profile logo"
-         src="https://github.com/marcandrelabellen2/cv-marckit/blob/master/src/images/profilepicture.png"
+         src="https://github.com/marcandrelabelle2/cv-marckit/blob/master/src/images/profilepicture.png"
          width="200px"
          height="200px"
      />
