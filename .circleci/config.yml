@@ -4,4 +4,4 @@ jobs:
     docker:
       - image: koppor/texlive
     steps:
-      - run: 'make'
+      - run: 'make all'
