@@ -6,7 +6,4 @@ stages:
 build:
     stage: build
     script:
-        - make devoir1
-    artifacts:
-        paths:
-            - ./devoir1/devoir1.pdf
+        - make
