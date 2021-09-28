@@ -2,7 +2,7 @@ version: 2
 jobs:
    build:
      docker:
-       - image: danteev/texlive-full
+       - image: danteev/texlive
      steps:
        - checkout
        - run: make
