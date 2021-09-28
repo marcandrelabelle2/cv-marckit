@@ -1,7 +1,10 @@
 version: 2
 jobs:
-  build:
+  build-2019:
     docker:
-      - image: koppor/texlive-full
+      - image: florentinth/texlive-full:latest
     steps:
-      - run: 'make all'
+      - checkout
+      - run:
+          name: Build LaTeX all
+          command: 'make'
