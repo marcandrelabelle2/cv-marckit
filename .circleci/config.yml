@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build-2019:
+  build:
     docker:
       - image: florentinth/texlive-full:latest
     steps:
@@ -11,10 +11,3 @@ jobs:
       - run:
           name: Build LaTeX
           command: 'make all'
-      - run:
-          name: Copy Artifact
-          command: |
-            mkdir /tmp/artifacts;
-            cp main.pdf /tmp/artifacts/;
-      - store_artifacts:
-          path: /tmp/artifactsversion: 2
