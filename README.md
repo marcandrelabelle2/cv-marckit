@@ -28,7 +28,7 @@ Here are the links to download the docs:
 
 | Curriculum Vitae | Coverletter |
 |:---:|:---:|
-|[![Curriculum Vitea marckit](https://github.com/marcandrelabelle2/cv-marckit/blob/master/src/images/docs/cv.png)][3]|[![Coverletter marckit](https://github.com/marcandrelabelle2/cv-marckit/blob/master/src/images/docs/coverletter.png)][4]|
+|[![Curriculum Vitea marckit](https://github.com/marcandrelabelle2/cv-marckit/blob/master/src/images/docs/cv.jpg)][3]|[![Coverletter marckit](https://github.com/marcandrelabelle2/cv-marckit/blob/master/src/images/docs/coverletter.jpg)][4]|
 
 <!--- Download links -->
 [1]:https://gitlab.com/marcandrelabelle2/cv-marckit/-/raw/master/pdf/cv.pdf?inline=false

@@ -2,6 +2,6 @@ version: 2
 jobs:
   build:
     docker:
-      - image: koppor/texlive
+      - image: koppor/texlive-full
     steps:
       - run: 'make all'
