@@ -1,0 +1,12 @@
+image: thomasweise/docker-texlive-full
+
+stages:
+    - build
+
+build:
+    stage: build
+    script:
+        - make devoir1
+    artifacts:
+        paths:
+            - ./devoir1/devoir1.pdf
