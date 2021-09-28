@@ -1,13 +1,8 @@
 version: 2
 jobs:
-  build:
-    docker:
-      - image: florentinth/texlive-full:latest
-    steps:
-      - checkout
-      - run:
-          name: Copy Files
-          command: 'cp -R ./src/* .'
-      - run:
-          name: Build LaTeX
-          command: 'make all'
+   build:
+     docker:
+       - image: danteev/texlive-full
+     steps:
+       - checkout
+       - run: make
