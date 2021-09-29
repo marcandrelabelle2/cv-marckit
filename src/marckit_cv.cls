@@ -40,8 +40,8 @@
 
 
 \hypersetup{
-    colorlinks=true,
-    urlcolor=darkgray,
+  colorlinks=true,
+  urlcolor=darkgray,
 }
 
 % View commands
@@ -49,61 +49,61 @@
 
 %
 \newcommand\headerview{
-\begin{minipage}{0.25\linewidth}
+  \begin{minipage}{0.25\linewidth}
     \profpic{0.22}{images/profilepicture}
-\end{minipage}% 
-\hfill
-\begin{minipage}{0.45\linewidth}
-    \center \name \\[0.05cm] 
+  \end{minipage}%
+  \hfill
+  \begin{minipage}{0.45\linewidth}
+    \center \name \\[0.05cm]
     \contact % address \ mobile \\ mail
-\end{minipage}
+  \end{minipage}
 }
 
 %profilpicture
 
 \newsavebox{\picbox}
 \newcommand{\profpic}[2]{%
-    \savebox{\picbox}{%
-    \includegraphics[scale=#1]{#2}}% 
-    \tikz\node [draw, circle,%
-    line width=4pt, color=white,% 
+  \savebox{\picbox}{%
+    \includegraphics[scale=#1]{#2}}%
+  \tikz\node [draw, circle,%
+    line width=4pt, color=white,%
     minimum width=\wd\picbox,minimum height=\ht\picbox,%
-    path picture={ \node at (path picture bounding box.center)% 
-    {\usebox{\picbox}};}]% 
-    {};}
-    
-%contactsubviews 
-    
-    
+    path picture={ \node at (path picture bounding box.center)%
+        {\usebox{\picbox}};}]%
+  {};}
+
+%contactsubviews
+
+
 \newcommand{\linkedinview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize linkedin}}
 \newcommand{\githubview}{\href{\@githubaccount}{\faGithub\ \footnotesize github}}
 \newcommand{\gitlabview}{\href{\@gitlabaccount}{\faGitlab\ \footnotesize gitlab}}
 
 \newcommand{\name}{%
-    {\large \@firstname \ \textsc{\@lastname}}
+  {\large \@firstname \ \textsc{\@lastname}}
 }
 
 \newcommand{\contact}{%
-        {\small \@address  \cps \@mobile \\ \@mail%
-        \\%
-        \linkedinview \cps \githubview \cps \gitlabview \\
-        } % 
+  {\small \@address  \cps \@mobile \\ \@mail%
+      \\%
+      \linkedinview \cps \githubview \cps \gitlabview \\
+    } %
 }
 
 % Covverletterview
 
-\newcommand\coverletter[1]{ 
-\\  \coverlettersubview 
-\section{} \vspace{1ex} 
-\textbf{ Dear \@contactperson, \\[0.1cm]}
+\newcommand\coverletter[1]{
+  \\  \coverlettersubview
+  \section{} \vspace{1ex}
+  \textbf{ Dear \@contactperson, \\[0.1cm]}
   #1
 }
 
 \newcommand\coverlettersubview{
-\begin{tabular}{>{\scshape \bfseries \color{\@themecolor}}l  >{\small }l}
-Company: & \@companyname \\
-Position: & \@claimedposition \\
-\end{tabular}
+  \begin{tabular}{>{\scshape \bfseries \color{\@themecolor}}l  >{\small }l}
+    Company:  & \@companyname     \\
+    Position: & \@claimedposition \\
+  \end{tabular}
 }
 
 
@@ -120,11 +120,11 @@ Position: & \@claimedposition \\
 
 % Edit section styles
 
-\titleformat{\section}      % Customise the \section command 
-  {\Large\bfseries\scshape\raggedright\color{\@themecolor}} % Make the \section headers large (\Large),
-                               % small capitals (\scshape) and left aligned (\raggedright)
-  {}{0em}                      
-  {\ruleafter}                           
+\titleformat{\section}      % Customise the \section command
+{\Large\bfseries\scshape\raggedright\color{\@themecolor}} % Make the \section headers large (\Large),
+% small capitals (\scshape) and left aligned (\raggedright)
+{}{0em}
+{\ruleafter}
 
 \titlespacing*{\section}{4pt}{4pt}{4pt}
 
@@ -135,7 +135,7 @@ Position: & \@claimedposition \\
 }
 
 \newcommand{\datetext}[1]{%
-{\itshape  \footnotesize \mdseries  \color{black!60!\@themecolor} #1 } 
+  {\itshape  \footnotesize \mdseries  \color{black!60!\@themecolor} #1 }
 }
 
 \newcommand{\datedexperience}[2]{%
@@ -143,42 +143,42 @@ Position: & \@claimedposition \\
 }
 
 \newcommand{\explanation}[1]{%
-    \mbox { \scshape \hspace{1.2em} \footnotesize #1}\\[0.05cm]
+  \mbox { \scshape \hspace{1.2em} \footnotesize #1}\\[0.05cm]
 }
 
 \newcommand{\explanationdetail}[1]{%
-    \indent \begin{minipage}{0.96\linewidth} \footnotesize #1 \end{minipage} \\[0.1cm]
+  \indent \begin{minipage}{0.96\linewidth} \footnotesize #1 \end{minipage} \\[0.1cm]
 }
 
 \newcommand{\itemwithtext}[1]{%
-    \begin{minipage}{\linewidth} \footnotesize \item #1 \end{minipage}
+  \begin{minipage}{\linewidth} \footnotesize \item #1 \end{minipage}
 }
 
 \newcommand{\addblocktext}[2]{%
-  \section{#1} 
+  \section{#1}
   \indent \explanationdetail{\hspace{4ex} #2}
 }
 
 \newcommand\createskill[2]{%
-    \textsc{\textbf{#1}} & #2
+  \textsc{\textbf{#1}} & #2
 }
 
 \newcommand\createtablecontent[1]{%
-    \foreach \x [count=\xi] in {#1} {\ifthenelse{\xi=1}{\x}{\\ \x}}
+  \foreach \x [count=\xi] in {#1} {\ifthenelse{\xi=1}{\x}{\\ \x}}
 }
 
 \newcommand\createskills[1]{%
-\explanationdetail{
-  \begin{tabular}{rl}
-    \makeatletter
-    \@for\thisitem:=#1\do{\thisitem\\[0.1cm]}
-    \makeatother
+  \explanationdetail{
+    \begin{tabular}{rl}
+      \makeatletter
+      \@for\thisitem:=#1\do{\thisitem \\[0.1cm]}
+      \makeatother
     \end{tabular}
-}
+  }
 }
 
 \newcommand\createbullets[1]{%
-    \renewcommand{\labelitemi}{\coloredbullet}
+  \renewcommand{\labelitemi}{\coloredbullet}
   \begin{itemize}
     \makeatletter
     \@for\thisitem:=#1\do{\itemwithtext{\thisitem}}
@@ -188,7 +188,7 @@ Position: & \@claimedposition \\
 
 \newcommand\createfootnote{%
   \renewcommand{\footnotesize}{\fontsize{7pt}{11pt}\selectfont}
-    \renewcommand\footnoterule{\rule{0.3\linewidth}{0.5pt}}
-    \let\thefootnote\relax\footnote{\today\ / \href{https://github.com/marckit/latex_cv}{source code}}}
+  \renewcommand\footnoterule{\rule{0.3\linewidth}{0.5pt}}
+  \let\thefootnote\relax\footnote{\today\ / \href{https://github.com/marckit/latex_cv}{source code}}}
 
 
