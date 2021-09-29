@@ -9,8 +9,8 @@
      />
   </a>
   <div align="center">
-    <a href="https://circleci.com/gh/marckit/cv-marckit/">
-      <img alt="CircleCI" src="https://circleci.com/gh/marckit/cv-marckit/tree/master.svg?style=shield" >
+    <a href="https://circleci.com/gh/marcandrelabelle2/cv-marckit/">
+      <img alt="CircleCI" src="https://circleci.com/gh/marcandrelabelle2/cv-marckit/tree/master.svg?style=shield" >
     </a>
     <a href="https://raw.githubusercontent.com/marcandrelabelle2/cv-marckit/master/pdf/cv.pdf">
       <img alt="Example CV" src="https://img.shields.io/badge/cv-pdf-blue.svg" />
